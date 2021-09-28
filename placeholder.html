@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        background: white;
+        color: black;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0px;
+      }
+
+      .displayCase {
+        text-align: center;
+        background-color: #f6f9f9;
+        border-top: 1px solid #efefef;
+        border-bottom: 1px solid #efefef;
+        padding: 24px 0px;
+      }
+
+      .link, .link:visited {
+        color: rgb(29, 155, 240);
+        text-decoration: none;
+      }
+
+      .link:hover {
+        color: rgb(29, 155, 240);
+        text-decoration: underline;
+      }
+
+      p {
+        line-height: 8px;
+      }
+
+      .dm body {
+          color: white;
+          background: #15202b;
+        }
+
+      .dm .displayCase {
+        color: white;
+        background-color: #15202b;
+        border-top: 1px solid rgb(56, 68, 77);
+        border-bottom: 1px solid rgb(56, 68, 77);
+      }
+
+      .darker body {
+          color: white;
+          background: rgb(21, 24, 28);
+        }
+
+      .darker .displayCase {
+        color: white;
+        background-color: rgb(21, 24, 28);
+        border-top: 1px solid rgb(56, 68, 77);
+        border-bottom: 1px solid rgb(56, 68, 77);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+            color: white;
+            background: #15202b;
+          }
+
+        .displayCase {
+          color: white;
+          background-color: #15202b;
+          border-top: 1px solid rgb(56, 68, 77);
+          border-bottom: 1px solid rgb(56, 68, 77);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="displayCase" id="displayCase">
+      <p>This user does not have Niftycase installed.<p>
+    </div>
+    <script type="text/javascript" src="placeholder.js"></script>
+  </body>
+</html>

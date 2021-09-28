@@ -1,17 +1,18 @@
 ![](https://i.imgur.com/IXe7XBX.png)
-# Niftycase – Embedded NFT Gallery
+# Niftycase – The Web 3.0 Chrome extension for Twitter
 ![](https://img.shields.io/github/last-commit/mattwelter/niftycase-chrome-extension)
 ![](https://img.shields.io/twitter/follow/_mattwelter?label=Check%20for%20updates&style=social)
 
-Embed your NFT collection on any website!
+Niftycase is a open-source Chrome extension that allows you to view anybody's NFTs directly on Twitter.
 
-# Usage
-## Add yourself to Niftycase
-1. Go to [niftycase.io](https://niftycase.io) & sign in with Twitter
+# How to:
+
+## How to add yourself to Niftycase
+1. Go to [niftycase.io](https://niftycase.io) & click "Sign in with Twitter"
 2. Enter your Ethereum address & click "Submit"
 
-## View NFTs on Twitter
-1. Download [Niftycase Chrome extension](https://chrome.google.com/webstore/detail/niftycase/hejlafcmjjeplkkccjpmjioheejldjbf/)
+## How to view NFTs on Twitter
+1. Install [Niftycase Chrome extension](https://chrome.google.com/webstore/detail/niftycase/hejlafcmjjeplkkccjpmjioheejldjbf/)
 2. Yup, it's that easy!
 
 # Features
@@ -38,9 +39,6 @@ Embed your NFT collection on any website!
 ## General
 **Is Niftycase open source?**
 >Yes!
-
-**Is this free?**
->Yup!
 
 ## Functionality
 **Will this work with my ENS domain?**

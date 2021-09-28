@@ -6,17 +6,13 @@
 Embed your NFT collection on any website!
 
 # Usage
-## Embed on your website (Github, Wix, Squarespace, etc)
-1. Visit [niftycase.io](https://niftycase.io)
-2. Type in your Ethereum wallet address into the input field & click "Generate"
-3. Scroll down and copy the `<iframe>` code under "Code for iframe"
-4. Paste the code inside the HTML code of your website
+## Add yourself to Niftycase
+1. Go to [niftycase.io](https://niftycase.io) & sign in with Twitter
+2. Enter your Ethereum address & click "Submit"
 
-## Embed in Notion
-1. Visit [niftycase.io](https://niftycase.io)
-2. Type in your Ethereum wallet address into the input field & click "Generate"
-3. Scroll down and copy the URL under "Embed link for Notion"
-4. Paste the URL inside your Notion document, resize if necessary! (:
+## View NFTs on Twitter
+1. Download [Niftycase Chrome extension](https://chrome.google.com/webstore/detail/niftycase/hejlafcmjjeplkkccjpmjioheejldjbf/)
+2. Yup, it's that easy!
 
 # FAQ
 
@@ -26,20 +22,11 @@ Embed your NFT collection on any website!
 
 ## General
 **Is Niftycase open source?**
->Yes! Hosted on Github
+>Yes!
 
 **Is this free?**
 >Yup!
 
-**Are there different gallary styles?**
->Not yet! Still working on a few different styles.
-
 ## Functionality
 **Will this work with my ENS domain?**
->Nope, still working on it. For now, use your eth addess.
-
-**Will this work with Yat?**
->Not yet, currently trying to work with the team!
-
-**Will this work with Linktree, linkbio, or other similar services?**
- >Not yet, currently trying to figure that out!
+>Nope, still working on it. For now, use your Ethereum address.

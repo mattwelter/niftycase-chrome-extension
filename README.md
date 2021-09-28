@@ -43,3 +43,10 @@ Niftycase is a open-source Chrome extension that allows you to view anybody's NF
 ## Functionality
 **Will this work with my ENS domain?**
 >Nope, still working on it. For now, use your Ethereum address.
+
+# Team
+### Product Manager
+Matt Welter - [@mattwelter](https://twitter.com/_mattwelter)
+
+### Developer
+Felix (Detlef) - [@detlef](https://stackoverflow.com/users/13708022/detlef)

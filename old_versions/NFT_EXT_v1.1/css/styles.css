@@ -1,0 +1,575 @@
+
+:root {
+  --ext-light-bg-color: #fff;
+  --ext-light-fg-color: #5f6368;
+  --ext-light-anchor-color: #2377e5;
+  --ext-light-border-color: #dadce0;
+  --ext-light-line-color: #dcdcdc;
+
+  --ext-dark-bg-color: #35363A;
+  --ext-dark-fg-color: #cdcdcd;
+  --ext-dark-anchor-color: #8cb6f5;
+  --ext-dark-border-color: #282828;
+  --ext-dark-line-color: #5d5f63;
+}
+
+#nft-extension {
+  top: 0px;
+  left: 0px;
+  width: 598px;
+  height: 350px;
+  border: none;
+  overflow: hidden;
+}
+
+.bold {
+  font-weight: bold !important;
+  color: rgb(15, 20, 25) !important;
+  /* color: white !important; */
+}
+
+.userDoesNotHaveNiftycase {
+  height: 113px !important;
+}
+
+.nft-tab, .nft-tab:visited {
+  padding-bottom: 4px;
+  padding-top: 4px;
+  transition-duration: 0.2s;
+  padding: 12px;
+  border-radius: 9999px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: rgb(15, 20, 25);
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 0.2s ease;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.nft-tab:hover {
+  background-color: #E7E7E8;
+}
+
+.nft-tab img {
+  width: 24px;
+  height: 24px;
+  margin-left: 1px;
+}
+
+.nft-tab span {
+  margin-top: -27px;
+  display: block;
+  margin-left: 46px;
+  margin-right: 16px;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#demoContainer {
+  padding: 24px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 14px;
+  background: #f6f9f9;
+  color: #000;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: none;
+}
+
+#myBar {
+  width: 1%;
+  height: 6px;
+  background-color: rgb(29, 155, 240);
+}
+
+#catchError {
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+#catchError h4 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 48px 0px 8px 0px;
+}
+
+#catchError a, #catchError a:visited {
+  font-size: 17px;
+  color: rgb(29, 155, 240);
+}
+
+div.activityFeedCard {
+  padding: 24px 36px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: white;
+}
+
+.activityFeedCard:nth-child(even) {
+  background-color: #f7f9f9;
+}
+
+#cardsContainer {
+  width: 100%;
+}
+
+.activityFeedImage {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  float: left;
+  margin-right: 16px;
+  border-radius: 24px;
+  transition: 0.125s ease;
+}
+
+.activityFeedImage:hover {
+  opacity: 0.75;
+}
+
+.activityFeedDate {
+  float: right;
+  color: rgb(83, 100, 113);
+}
+
+
+.activityFeedTitle, .activityFeedTitle:visited {
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 8px 0px;
+  display: block;
+  width: fit-content;
+  max-width: 333px;
+}
+
+.activityFeedTitle:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.activityFeedAuthor, .activityFeedAuthor:visited {
+  font-weight: 400;
+  color: rgb(83, 100, 113);
+  /*color: rgb(27, 149, 224);*/
+  text-decoration: none;
+}
+
+.activityFeedAuthor:hover, .activityFeedAuthor-dark:hover {
+  text-decoration: underline;
+}
+
+
+
+@-webkit-keyframes loadingGradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes loadingGradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes loadingGradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes loadingGradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+
+div.activityFeedCardPlaceholder {
+  padding: 24px 36px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.activityFeedCardPlaceholder:nth-child(odd) {
+  background: linear-gradient(270deg, #f7f9f9, #f7f9f9,  #f7f9f9, #f7f9f9, #f2f5f5, #f7f9f9, #f7f9f9, #f7f9f9, #f7f9f9);
+  background-size: 300% 300%;
+
+  -webkit-animation: loadingGradient 3s ease infinite;
+  -moz-animation: loadingGradient 3s ease infinite;
+  -o-animation: loadingGradient 3s ease infinite;
+  animation: loadingGradient 3s ease infinite;
+}
+
+.activityFeedDatePlaceholder,
+.activityEventPlaceholder,
+.activityFeedImagePlaceholder,
+.activityFeedDatePlaceholder,
+.activityFeedTitlePlaceholder,
+.activityFeedAuthorPlaceholder,
+.activityFeedEventPlaceholder {
+  color: rgb(233 238 239);
+  background: rgb(233 238 239);
+}
+
+
+
+#cardsContainerPlaceholder {
+  width: 100%;
+}
+
+.activityFeedImagePlaceholder {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  float: left;
+  margin-right: 16px;
+  border-radius: 24px;
+  transition: 0.125s ease;
+}
+
+.activityEventPlaceholder {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.activityFeedDatePlaceholder {
+  float: right;
+}
+
+.activityFeedTitlePlaceholder, .activityFeedTitlePlaceholder:visited {
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 8px 0px;
+  display: block;
+  width: 250px;
+}
+
+.activityFeedAuthorPlaceholder, .activityFeedAuthorPlaceholder:visited {
+  font-weight: 400;
+  text-decoration: none;
+}
+
+
+
+
+
+.selling, .selling:visited {
+  background: #fff1aa;
+  color: #654d08 !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.selling-dark, .selling-dark:visited {
+  background: rgb(255 213 0) !important;
+  color: #0c0e10 !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.purchased, .purchased:visited {
+  background: #dfecff;
+  color: #3745ff !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.purchased-dark, .purchased-dark:visited {
+  background: #3745ff;
+  color: #dfecff !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.minted, .minted:visited {
+  background: #d1ff8a;
+  color: #055600 !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.minted-dark, .minted-dark:visited {
+  background: rgb(182 255 68) !important;
+  color: black !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.sold, .sold:visited {
+  background: #ffdfdf;
+  color: #ce0037 !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.sold-dark, .sold-dark:visited {
+  background: #ce0037;
+  color: #ffdfdf !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.transferred, .transferred:visited {
+  background: lightblue;
+  color: blue !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.transferred-dark, .transferred-dark:visited {
+  background: blue;
+  color: lightblue !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+/* --- */
+
+
+@media (prefers-color-scheme: dark) {
+  .bold {
+    font-weight: bold !important;
+    color: white !important;
+  }
+}
+
+#catchError-dark h4,{
+  color: white;
+}
+
+.nft-tab-dark, .nft-tab-dark:visited {
+  padding-bottom: 4px;
+  padding-top: 4px;
+  transition-duration: 0.2s;
+  padding: 12px;
+  border-radius: 9999px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: rgba(217,217,217,1.00);
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 0.2s ease;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.nft-tab-dark:hover {
+  background-color: #181818;
+}
+
+.nft-tab-dark img {
+  width: 24px;
+  height: 24px;
+  margin-left: 1px;
+}
+
+.nft-tab-dark span {
+  margin-top: -27px;
+  display: block;
+  margin-left: 46px;
+  margin-right: 16px;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#demoContainer-dark {
+  padding: 24px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 14px;
+  background: #161616;
+  color: #fff;
+}
+
+div.activityFeedCard-dark {
+  padding: 24px 36px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #0c0e10;
+}
+
+.activityFeedCard-dark:nth-child(even) {
+  background-color: rgb(19 21 25);
+}
+
+.activityFeedImage-dark {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  float: left;
+  margin-right: 16px;
+  border-radius: 24px;
+  transition: 0.125s ease;
+}
+
+.activityFeedDate-dark {
+  float: right;
+  color: #797880;
+}
+
+.activityFeedTitle-dark, .activityFeedTitle-dark:visited {
+  font-weight: 500;
+  font-size: 24px;
+  color: #eaeaea;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 8px 0px;
+  display: block;
+  width: fit-content;
+  max-width: 333px;
+}
+
+.activityFeedTitle-dark:hover {
+  text-decoration: underline;
+  color: #8b8b8b;
+}
+
+.activityFeedAuthor-dark, .activityFeedAuthor-dark:visited {
+  font-weight: 400;
+  color: #797880;
+  /*color: rgb(27, 149, 224);*/
+  text-decoration: none;
+}
+
+.activityFeedCardPlaceholder-dark:nth-child(odd) {
+  background: rgb(19 21 25);
+}
+
+div.activityFeedCardPlaceholder-dark {
+  padding: 24px 36px;
+  background: #0c0e10;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.activityFeedDatePlaceholder-dark,
+.activityEventPlaceholder-dark,
+.activityFeedImagePlaceholder-dark,
+.activityFeedDatePlaceholder-dark,
+.activityFeedTitlePlaceholder-dark,
+.activityFeedAuthorPlaceholder-dark,
+.activityFeedEventPlaceholder-dark {
+  color: #35363A;
+  background: #35363A;
+}
+
+.activityFeedImagePlaceholder-dark {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  float: left;
+  margin-right: 16px;
+  border-radius: 24px;
+  transition: 0.125s ease;
+}
+
+.activityEventPlaceholder-dark {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.activityFeedDatePlaceholder-dark {
+  float: right;
+}
+
+.activityFeedTitlePlaceholder-dark, .activityFeedTitlePlaceholder-dark:visited {
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 8px 0px;
+  display: block;
+  width: 250px;
+}
+
+.activityFeedAuthorPlaceholder-dark, .activityFeedAuthorPlaceholder-dark:visited {
+  font-weight: 400;
+  text-decoration: none;
+}

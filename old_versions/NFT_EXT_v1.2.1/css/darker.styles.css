@@ -1,0 +1,258 @@
+/* darker theme */
+
+.darker .bold {
+  font-weight: bold !important;
+  color: white !important;
+}
+
+.darker #catchError h4,{
+  color: white;
+}
+
+.darker #demoContainer {
+  padding: 24px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 14px;
+  background: #161616;
+  color: #fff;
+}
+
+
+.darker .nft-tab,
+.darker .nft-tab:visited
+{
+  padding-bottom: 4px;
+  padding-top: 4px;
+  transition-duration: 0.2s;
+  padding: 12px;
+  border-radius: 9999px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: rgba(217,217,217,1.00);
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 0.2s ease;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.darker .nft-tab:hover {
+  background-color: #181818;
+}
+
+.darker .nft-tab img {
+  width: 24px;
+  height: 24px;
+  margin-left: 1px;
+}
+
+.darker .nft-tab span {
+  margin-top: -27px;
+  display: block;
+  margin-left: 46px;
+  margin-right: 16px;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.darker div.activityFeedCard {
+  background-color: #0c0e10 !important;
+}
+
+.darker .activityFeedCard:nth-child(even) {
+  background-color: rgb(19 21 25) !important;
+}
+
+.darker .activityFeedImage {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  float: left;
+  margin-right: 16px;
+  border-radius: 24px;
+  transition: 0.125s ease;
+}
+
+.darker .activityFeedDate {
+  float: right;
+  color: #797880;
+}
+
+.darker .activityFeedTitle,
+.darker .activityFeedTitle:visited
+{
+  font-weight: 500;
+  font-size: 24px;
+  color: #eaeaea;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 8px 0px;
+  display: block;
+  width: fit-content;
+  max-width: 333px;
+}
+
+.darker .activityFeedTitle:hover {
+  text-decoration: underline;
+  color: #8b8b8b;
+}
+
+.darker .activityFeedAuthor,
+.darker .activityFeedAuthor:visited
+{
+  font-weight: 400;
+  color: #797880;
+  /*color: rgb(27, 149, 224);*/
+  text-decoration: none;
+}
+
+
+.darker div.activityFeedCardPlaceholder {
+  padding: 24px 36px;
+  background: #0c0e10;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.darker .activityFeedCardPlaceholder:nth-child(odd) {
+  background: rgb(19 21 25);
+}
+
+
+.darker .activityFeedDatePlaceholder,
+.darker .activityEventPlaceholder,
+.darker .activityFeedImagePlaceholder,
+.darker .activityFeedDatePlaceholder,
+.darker .activityFeedTitlePlaceholder,
+.darker .activityFeedAuthorPlaceholder,
+.darker .activityFeedEventPlaceholder
+{
+  color: #35363A;
+  background: #35363A;
+}
+
+.darker .activityFeedImagePlaceholder {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  float: left;
+  margin-right: 16px;
+  border-radius: 24px;
+  transition: 0.125s ease;
+}
+
+.darker .activityEventPlaceholder {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.darker .activityFeedDatePlaceholder {
+  float: right;
+}
+
+.darker .activityFeedTitlePlaceholder,
+.darker .activityFeedTitlePlaceholder:visited
+{
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 8px 0px;
+  display: block;
+  width: 250px;
+}
+
+.darker .activityFeedAuthorPlaceholder,
+.darker .activityFeedAuthorPlaceholder:visited
+{
+  font-weight: 400;
+  text-decoration: none;
+}
+
+
+.darker .selling,
+.darker .selling:visited
+{
+  background: rgb(255 213 0) !important;
+  color: #0c0e10 !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.darker .purchased,
+.darker .purchased:visited
+{
+  background: #3745ff;
+  color: #dfecff !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.darker .minted,
+.darker .minted:visited
+{
+  background: rgb(182 255 68) !important;
+  color: black !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.darker .sold,
+.darker .sold:visited
+{
+  background: #ce0037;
+  color: #ffdfdf !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.darker .transferred,
+.darker .transferred:visited
+{
+  background: blue;
+  color: lightblue !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}

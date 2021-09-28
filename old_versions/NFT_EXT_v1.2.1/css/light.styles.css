@@ -1,0 +1,259 @@
+/* light theme */
+
+.light .bold {
+  font-weight: bold !important;
+  color: rgb(15, 20, 25) !important;
+}
+
+.light #catchError h4,{
+  color: rgb(29, 155, 240);
+}
+
+.light #demoContainer {
+  padding: 24px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  font-size: 14px;
+  background: #f6f9f9;
+  color: #000;
+}
+
+
+.light .nft-tab,
+.light .nft-tab:visited
+{
+  padding-bottom: 4px;
+  padding-top: 4px;
+  transition-duration: 0.2s;
+  padding: 12px;
+  border-radius: 9999px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: rgb(15, 20, 25);
+  overflow: hidden;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: 0.2s ease;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.light .nft-tab:hover {
+  background-color: #E7E7E8;
+}
+
+.light .nft-tab img {
+  width: 24px;
+  height: 24px;
+  margin-left: 1px;
+}
+
+.light .nft-tab span {
+  margin-top: -27px;
+  display: block;
+  margin-left: 46px;
+  margin-right: 16px;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+.light div.activityFeedCard {
+  background-color: white !important;
+}
+
+.light .activityFeedCard:nth-child(even) {
+  background-color: #f7f9f9 !important;
+}
+
+.light .activityFeedImage {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  float: left;
+  margin-right: 16px;
+  border-radius: 24px;
+  transition: 0.125s ease;
+}
+
+.light .activityFeedDate {
+  float: right;
+  color: rgb(83, 100, 113);
+}
+
+.light .activityFeedTitle,
+.light .activityFeedTitle:visited
+{
+  font-weight: 500;
+  font-size: 24px;
+  color: #000;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 8px 0px;
+  display: block;
+  width: fit-content;
+  max-width: 333px;
+}
+
+.light .activityFeedTitle:hover {
+  text-decoration: underline;
+  color: #333;
+}
+
+.light .activityFeedAuthor,
+.light .activityFeedAuthor:visited
+{
+  font-weight: 400;
+  color: rgb(83, 100, 113);
+  /*color: rgb(27, 149, 224);*/
+  text-decoration: none;
+}
+
+
+.light div.activityFeedCardPlaceholder {
+  padding: 24px 36px;
+  font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: white;
+}
+
+.light .activityFeedCardPlaceholder:nth-child(odd) {
+  background: linear-gradient(270deg, #f7f9f9, #f7f9f9,  #f7f9f9, #f7f9f9, #f2f5f5, #f7f9f9, #f7f9f9, #f7f9f9, #f7f9f9);
+  background-size: 300% 300%;
+}
+
+
+.light .activityFeedDatePlaceholder,
+.light .activityEventPlaceholder,
+.light .activityFeedImagePlaceholder,
+.light .activityFeedDatePlaceholder,
+.light .activityFeedTitlePlaceholder,
+.light .activityFeedAuthorPlaceholder,
+.light .activityFeedEventPlaceholder
+{
+  color: rgb(233 238 239) !important;
+  background: rgb(233 238 239) !important;
+}
+
+.light .activityFeedImagePlaceholder {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  float: left;
+  margin-right: 16px;
+  border-radius: 24px;
+  transition: 0.125s ease;
+}
+
+.light .activityEventPlaceholder {
+  margin-top: 8px;
+  display: inline-block;
+}
+
+.light .activityFeedDatePlaceholder {
+  float: right;
+}
+
+.light .activityFeedTitlePlaceholder,
+.light .activityFeedTitlePlaceholder:visited
+{
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 8px 0px;
+  display: block;
+  width: 250px;
+}
+
+.light .activityFeedAuthorPlaceholder,
+.light .activityFeedAuthorPlaceholder:visited
+{
+  font-weight: 400;
+  text-decoration: none;
+}
+
+
+.light .selling,
+.light .selling:visited
+{
+  background: #fff1aa !important;
+  color: #654d08 !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.light .purchased,
+.light .purchased:visited
+{
+  background: #dfecff;
+  color: #3745ff !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.light .minted,
+.light .minted:visited
+{
+  background: #d1ff8a !important;
+  color: #055600 !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.light .sold,
+.light .sold:visited
+{
+  background: #ffdfdf;
+  color: #ce0037 !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
+
+.light .transferred,
+.light .transferred:visited
+{
+  background: lightblue;
+  color: blue !important;
+  padding: 0px 4px;
+  border-radius: 2px;
+  width: fit-content;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-top: 10px !important;
+  display: block;
+  transition: 0.125s ease;
+}
